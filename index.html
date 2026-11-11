@@ -1,0 +1,334 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>הצעת תפקיד ג'אנגל וזוזו</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Layout: single reading column — hero, fixed package, four bonus engines, simulator, table, FAQ */
+:root{
+  --ink:#10262e;--ink2:#3d4f56;--muted:#6b7a80;--line:#e3e8e5;
+  --bg:#f7f5ef;--card:#fff;--soft:#f3f6f4;--soft2:#eef6f2;
+  --teal:#0f7a6c;--teal-d:#0a5a50;--mint:#dff5ec;--mint-ink:#124c43;
+  --btn:#fff;--btn-line:#c9d8d2;--tab-on-bg:#10262e;--tab-on-fg:#fff;
+  --c-base:#10262e;--c-home:#5b7f8a;--c-rev:#0f7a6c;--c-lease:#d9962a;--c-rate:#7a5cc7;--c-ev:#d9674a;
+  --font:Heebo,Arial,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#e8efed;--ink2:#b8c6c4;--muted:#8a9a9b;--line:#2a3a3e;
+  --bg:#0f1b1f;--card:#16252a;--soft:#1c2d32;--soft2:#1a3330;
+  --teal:#3cc2ad;--teal-d:#0d6b5f;--mint:#173c36;--mint-ink:#bfeee0;
+  --btn:#16252a;--btn-line:#35494e;--tab-on-bg:#3cc2ad;--tab-on-fg:#0f1b1f;
+  --c-base:#a9c0c6;--c-home:#5b7f8a;--c-rev:#3cc2ad;--c-lease:#e8b04d;--c-rate:#a08ae6;--c-ev:#ec8a6f;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#e8efed;--ink2:#b8c6c4;--muted:#8a9a9b;--line:#2a3a3e;
+  --bg:#0f1b1f;--card:#16252a;--soft:#1c2d32;--soft2:#1a3330;
+  --teal:#3cc2ad;--teal-d:#0d6b5f;--mint:#173c36;--mint-ink:#bfeee0;
+  --btn:#16252a;--btn-line:#35494e;--tab-on-bg:#3cc2ad;--tab-on-fg:#0f1b1f;
+  --c-base:#a9c0c6;--c-home:#5b7f8a;--c-rev:#3cc2ad;--c-lease:#e8b04d;--c-rate:#a08ae6;--c-ev:#ec8a6f;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--font)}
+main{max-width:980px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.num{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+h1,h2{text-wrap:balance}
+h2{font-size:26px;line-height:1.25;margin:0 0 6px;font-weight:800}
+.lead{color:var(--ink2);margin:0 0 18px;max-width:680px}
+section{margin-top:44px}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.hero{background:radial-gradient(120% 140% at 100% 0%,#1b6f66 0%,#10333b 55%,#0c242b 100%);color:#fff;border-radius:24px;padding:36px 34px 30px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:#9fdcc9}
+.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:10px 0 12px;font-weight:900}
+.hero p{margin:0;color:#cfe5df;font-size:17px;max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.stat{background:#ffffff14;border:1px solid #ffffff2e;border-radius:16px;padding:16px 18px}
+.stat.hl{background:#dff5ec;color:#0b3f38;border:0}
+.stat b{display:block;font-size:clamp(26px,3.6vw,36px);font-weight:900;line-height:1.15;text-align:right}
+.stat span{font-size:13px;opacity:.85}
+
+.equation{display:flex;align-items:stretch;gap:12px;flex-wrap:wrap}
+.eqbox{flex:1 1 200px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.eqbox small{display:block;color:var(--muted);font-size:13px}
+.eqbox b{display:block;font-size:34px;font-weight:900;line-height:1.2;margin:4px 0}
+.eqbox p{margin:0;font-size:14px;color:var(--ink2)}
+.eqop{align-self:center;font-size:30px;font-weight:800;color:var(--muted)}
+.eqbox.total{background:#10262e;color:#fff;border:1px solid #2a3a3e}
+.eqbox.total small,.eqbox.total p{color:#b9cdd0}
+
+.engines{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.engine{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;border-top:5px solid var(--c);min-width:0}
+.engine h3{margin:0;font-size:19px;font-weight:800;display:flex;gap:8px;align-items:center}
+.engine .rule{font-size:22px;font-weight:900;color:var(--c);margin:8px 0 6px;line-height:1.25}
+.engine p{margin:6px 0;font-size:14.5px;color:var(--ink2)}
+.ex{background:var(--soft);border-radius:12px;padding:11px 13px;font-size:14px;margin-top:12px}
+.ex b{color:var(--ink)}
+.you{font-size:13px;color:var(--muted);margin-top:10px}
+
+.opp{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.rbar{margin:22px 0 4px}
+.rbar .top{display:flex;justify-content:space-between;font-weight:700;font-size:15px}
+.track{position:relative;height:14px;background:var(--soft);border-radius:99px;margin-top:6px}
+.fill{position:absolute;top:0;right:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#e8a33a,#d9674a)}
+.thresh{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--teal)}
+.thresh::after{content:'8.0 = סף הבונוס';position:absolute;top:-20px;transform:translateX(50%);right:0;font-size:11px;color:var(--teal);white-space:nowrap;font-weight:700}
+.oppnote{background:var(--mint);border-radius:12px;padding:13px 15px;margin-top:20px;font-size:14.5px;color:var(--mint-ink)}
+
+.sim{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.tab{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--btn-line);background:var(--btn);color:var(--ink);padding:9px 16px;border-radius:99px;cursor:pointer}
+.tab[aria-pressed=true]{background:var(--tab-on-bg);color:var(--tab-on-fg);border-color:var(--tab-on-bg)}
+.scDesc{color:var(--ink2);font-size:14.5px;margin:-6px 0 18px;min-height:22px}
+.result{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rbox{border-radius:16px;padding:18px 20px;background:var(--soft2)}
+.rbox.dark{background:linear-gradient(120deg,#0a5a50,#0f7a6c);color:#fff}
+.rbox span{font-size:14px;font-weight:700}
+.rbox b{display:block;font-size:clamp(32px,5vw,44px);font-weight:900;line-height:1.15;text-align:right}
+.rbox small{font-size:12.5px;opacity:.85}
+.stack{display:flex;height:22px;border-radius:99px;overflow:hidden;margin:20px 0 10px;background:var(--soft)}
+.stack div{height:100%;transition:width .35s ease}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px}
+.lrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.lrow i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-left:8px;vertical-align:middle}
+.custom{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+.cgrid>div{min-width:0}
+.ctl{margin-bottom:14px}
+.ctl .lr{display:flex;justify-content:space-between;gap:10px;font-size:14px;font-weight:700;margin-bottom:4px}
+.ctl output{color:var(--teal);font-weight:800}
+.ctl .h{font-size:12px;color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--teal)}
+.chk{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--ink2);margin-top:6px}
+.chk input{margin-top:4px;accent-color:var(--teal)}
+.chk.off{opacity:.45}
+.seg{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.seg button{font:inherit;font-size:13px;font-weight:700;border:1px solid var(--btn-line);background:var(--btn);color:var(--ink);padding:7px 13px;border-radius:9px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--mint);border-color:var(--teal);color:var(--mint-ink)}
+.fine{font-size:12.5px;color:var(--muted);margin:16px 0 0}
+
+.tablewrap{overflow-x:auto;border-radius:16px;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;background:var(--card)}
+th,td{padding:12px 14px;text-align:right;font-size:15px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-size:13px;color:var(--ink2)}
+tr:last-child td{border-bottom:0}
+td.bonus{color:var(--teal);font-weight:800}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:8px}
+summary{font-weight:700;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:'+';display:inline-block;width:18px;color:var(--teal);font-weight:900}
+details[open] summary::before{content:'–'}
+details p{margin:8px 0 0;color:var(--ink2);font-size:14.5px}
+
+.closing{background:#10262e;color:#fff;border-radius:22px;padding:30px;text-align:center}
+.closing p{color:#c4d6d9;margin:0 auto;max-width:560px}
+
+@media(max-width:760px){
+  .hero{padding:26px 20px}
+  .stats,.engines,.result,.legend,.cgrid{grid-template-columns:1fr}
+  .eqop{display:none}
+  h2{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){.stack div{transition:none}}
+</style>
+
+<main>
+<header class="hero">
+  <div class="eyebrow">JUNGLE JAFFA × ZUZU · יפו, תל אביב</div>
+  <h1>מנהל/ת לשני נכסים.<br>בסיס יציב, ובונוסים שגדלים איתך.</h1>
+  <p>מגורים בדירת סטודיו פרטית, שכר חודשי, וארבעה מנגנוני בונוס שמתגמלים בדיוק את מה שבאחריותך: הכנסות, השכרות, חוויית אורח ואירועים.</p>
+  <div class="stats">
+    <div class="stat hl"><span>חבילה קבועה בחודש</span><b class="num">₪10,600</b><span>שכר + שווי הסטודיו</span></div>
+    <div class="stat"><span>מנגנוני בונוס</span><b class="num">4</b><span>כולם מבוססי תוצאה</span></div>
+    <div class="stat"><span>שווי חודשי בתרחיש יעד</span><b class="num" id="heroTarget">₪14,880</b><span>אחרי שנה בתפקיד</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>החבילה הקבועה</h2>
+  <p class="lead">זה מה שמקבלים כל חודש, בלי קשר לביצועים.</p>
+  <div class="equation">
+    <div class="eqbox"><small>שכר בסיס חודשי</small><b class="num">₪5,000</b><p>משולם בתלוש, לפני ניכויים</p></div>
+    <div class="eqop">+</div>
+    <div class="eqbox"><small>דירת סטודיו פרטית</small><b class="num">₪5,600</b><p>שווי השכרה מוערך בחודש</p></div>
+    <div class="eqop">=</div>
+    <div class="eqbox total"><small>שווי חודשי קבוע</small><b class="num">₪10,600</b><p>עוד לפני שקל אחד של בונוס</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>ארבע דרכים להרוויח יותר</h2>
+  <p class="lead">כל מנגנון קשור לתוצאה שאפשר להשפיע עליה ישירות. אין תקרה.</p>
+  <div class="engines">
+    <article class="engine" style="--c:var(--c-rev)">
+      <h3>📈 הכנסות ג'אנגל</h3>
+      <div class="rule">₪250 על כל מדרגה של ₪5,000</div>
+      <p>הבונוס נפתח כשההכנסה החודשית מגיעה ל־₪45,000, ומוסיף ₪250 על כל ₪5,000 נוספים.</p>
+      <div class="ex"><b>דוגמה:</b> הכנסה של ₪65,000 בחודש = <b>₪1,250 בונוס</b>.</div>
+      <div class="you">ההכנסה = מיטות שנמכרו × מחיר למיטה. שני המנופים נחשבים, והתמהיל בידיים שלך. נמדד ללא מע״מ, אחרי ביטולים והחזרים.</div>
+    </article>
+    <article class="engine" style="--c:var(--c-lease)">
+      <h3>🔑 חוזים חדשים בזוזו</h3>
+      <div class="rule">10% מהחודש הראשון</div>
+      <p>על כל חוזה שכירות חדש שנחתם ושכר הדירה הראשון שלו נגבה. שכר הדירה מתחיל ב־₪5,000.</p>
+      <div class="ex"><b>דוגמה:</b> שני חוזים חדשים של ₪5,500 = <b>₪1,100</b>.</div>
+      <div class="you">מגיע גם כשהפנייה הגיעה דרך החברה.</div>
+    </article>
+    <article class="engine" style="--c:var(--c-rate)">
+      <h3>⭐ דירוג בבוקינג</h3>
+      <div class="rule">₪100 על כל 0.1 מעל 8.0</div>
+      <p>בונוס חודשי נפרד לכל נכס, לפי הדירוג בסוף החודש.</p>
+      <div class="ex"><b>דוגמה:</b> 8.5 בשני הנכסים = ₪500 + ₪500 = <b>₪1,000</b>.</div>
+      <div class="you">בחצי השנה הראשונה יש גם בונוס שיפור, ראו למטה.</div>
+    </article>
+    <article class="engine" style="--c:var(--c-ev)">
+      <h3>🎉 אירועים והשכרת חללים</h3>
+      <div class="rule">7% עמלה</div>
+      <p>על השכרת הגגות והחללים, ועל הרווח משירותים נלווים (הכנסה פחות העלות הישירה).</p>
+      <div class="ex"><b>דוגמה:</b> השכרה ב־₪6,000 + רווח שירותים ₪2,000 = <b>₪560</b>.</div>
+      <div class="you">מגיע על כל אירוע שבניהולך, גם אם לא את/ה הבאת את הליד.</div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>נקודת הפתיחה היא ההזדמנות</h2>
+  <p class="lead">הדירוגים היום נמוכים, ולכן יש כאן מקום לשיפור מהיר שמתוגמל מהחודש הראשון.</p>
+  <div class="opp">
+    <div class="rbar"><div class="top"><span>זוזו</span><span class="num">3.6 / 10</span></div>
+      <div class="track"><div class="fill" style="width:36%"></div><div class="thresh" style="right:80%"></div></div></div>
+    <div class="rbar" style="margin-top:34px"><div class="top"><span>ג'אנגל</span><span class="num">5.6 / 10</span></div>
+      <div class="track"><div class="fill" style="width:56%"></div><div class="thresh" style="right:80%"></div></div></div>
+    <div class="oppnote"><b>בונוס שיפור, חודשים 1–6:</b> ₪250 לכל נכס שהדירוג שלו עלה ב־0.1 לפחות לעומת החודש הקודם, וקיבל לפחות 5 ביקורות חדשות באותו חודש. עד ₪500 בחודש, גם הרבה לפני שמגיעים ל־8.0.</div>
+  </div>
+</section>
+
+<section id="sim">
+  <h2>כמה זה יוצא בפועל?</h2>
+  <p class="lead">שלושה תרחישים לאורך השנה הראשונה. אפשר גם לבנות תרחיש משלך.</p>
+  <div class="sim">
+    <div class="tabs" role="group" aria-label="תרחיש">
+      <button class="tab" type="button" data-sc="m1" aria-pressed="true">חודש ראשון</button>
+      <button class="tab" type="button" data-sc="m6" aria-pressed="false">אחרי חצי שנה</button>
+      <button class="tab" type="button" data-sc="y1" aria-pressed="false">יעד שנה</button>
+      <button class="tab" type="button" data-sc="custom" aria-pressed="false">⚙️ תרחיש משלי</button>
+    </div>
+    <p class="scDesc" id="scDesc"></p>
+    <div class="result">
+      <div class="rbox"><span>שכר ובונוסים בחודש</span><b class="num" id="cash">—</b><small>תשלום כספי, לפני ניכויים</small></div>
+      <div class="rbox dark"><span>שווי כולל, כולל הסטודיו</span><b class="num" id="pkg">—</b><small>כולל ₪5,600 שווי מגורים</small></div>
+    </div>
+    <div class="stack" id="stack" aria-hidden="true"></div>
+    <div class="legend" id="legend"></div>
+
+    <div class="custom" id="custom" hidden>
+      <div class="seg" role="group" aria-label="תקופה">
+        <button type="button" data-half="1" aria-pressed="true">חודשים 1–6</button>
+        <button type="button" data-half="0" aria-pressed="false">מחודש 7 ואילך</button>
+      </div>
+      <div class="cgrid">
+        <div>
+          <div class="ctl"><div class="lr"><label for="rev">הכנסות ג'אנגל בחודש</label><output class="num" id="revV"></output></div><input type="range" id="rev" min="35000" max="95000" step="1000"><div class="h" id="revH"></div></div>
+          <div class="ctl"><div class="lr"><label for="leases">חוזים חדשים בזוזו</label><output class="num" id="leasesV"></output></div><input type="range" id="leases" min="0" max="6" step="1"></div>
+          <div class="ctl"><div class="lr"><label for="rent">שכר דירה לחוזה</label><output class="num" id="rentV"></output></div><input type="range" id="rent" min="5000" max="12000" step="500"></div>
+          <div class="ctl"><div class="lr"><label for="ev">השכרת חללים לאירועים</label><output class="num" id="evV"></output></div><input type="range" id="ev" min="0" max="20000" step="500"></div>
+          <div class="ctl"><div class="lr"><label for="svc">רווח משירותי אירועים</label><output class="num" id="svcV"></output></div><input type="range" id="svc" min="0" max="10000" step="500"><div class="h">הכנסה מהשירותים פחות העלות הישירה שלהם</div></div>
+        </div>
+        <div>
+          <div class="ctl"><div class="lr"><label for="z">דירוג זוזו בסוף החודש</label><output class="num" id="zV"></output></div><input type="range" id="z" min="3.6" max="10" step="0.1">
+            <label class="chk" id="ziL"><input type="checkbox" id="zi"> עלה ב־0.1+ החודש וקיבל 5+ ביקורות חדשות</label></div>
+          <div class="ctl" style="margin-top:22px"><div class="lr"><label for="j">דירוג ג'אנגל בסוף החודש</label><output class="num" id="jV"></output></div><input type="range" id="j" min="5.6" max="10" step="0.1">
+            <label class="chk" id="jiL"><input type="checkbox" id="ji"> עלה ב־0.1+ החודש וקיבל 5+ ביקורות חדשות</label></div>
+        </div>
+      </div>
+    </div>
+    <p class="fine">התרחישים להמחשה בלבד. הבונוסים משולמים לפי תוצאות בפועל. השווי הכולל מחבר תשלום כספי ושווי מגורים, ואינו כולו תשלום במזומן.</p>
+  </div>
+</section>
+
+<section>
+  <h2>מדרגות בונוס ההכנסות</h2>
+  <p class="lead">כל ₪5,000 של הכנסה חודשית בג'אנגל מעל ₪45,000 מוסיפים ₪250 לבונוס.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>הכנסה חודשית (ללא מע״מ)</th><th>בונוס הכנסות</th></tr></thead>
+    <tbody id="revTable"></tbody>
+  </table></div>
+  <p class="fine">ג'אנגל כולל 26 מיטות. ההכנסה גדלה גם ממילוי מיטות וגם מתמחור נכון, כולל תמחור דינמי בעונות ובסופי שבוע.</p>
+</section>
+
+<section>
+  <h2>שאלות שכדאי לדעת את התשובה עליהן</h2>
+  <details><summary>מתי עמלה על חוזה חדש נחשבת?</summary><p>אחרי שהחוזה נחתם ושכר הדירה של החודש הראשון נגבה בפועל. העמלה מחושבת על שכר הדירה ללא מע״מ.</p></details>
+  <details><summary>האם יש עמלה על חידוש חוזה או על גבייה שוטפת?</summary><p>לא. חידושים וגבייה חודשית שוטפת הם חלק מהתפקיד ולא מזכים בעמלה.</p></details>
+  <details><summary>אפשר לקבל גם בונוס שיפור וגם בונוס דירוג על אותו נכס?</summary><p>לא באותו חודש. אם הנכס כבר מעל 8.0, מקבלים את בונוס הדירוג. בונוס השיפור מיועד לחודשים שבהם הנכס עוד מתחת לסף.</p></details>
+  <details><summary>איך נמדדת ההכנסה לבונוס של ג'אנגל?</summary><p>הכנסה חודשית ללא מע״מ, אחרי ביטולים והחזרים.</p></details>
+  <details><summary>מתי משולמת עמלת אירועים?</summary><p>אחרי שהאירוע התקיים, על ההכנסה שנגבתה בפועל.</p></details>
+  <details><summary>הסטודיו הוא חלק מהשכר?</summary><p>הסטודיו ניתן כמגורים פרטיים לאורך התקופה. הסכום של ₪5,600 הוא שווי השכרה מוערך, להמחשת ערך החבילה, ואינו משולם בכסף.</p></details>
+</section>
+
+<section class="closing">
+  <h2>רוצה לדבר על זה?</h2>
+  <p>נשמח לעבור יחד על הפרטים, לענות על שאלות ולסגור את התנאים.</p>
+</section>
+</main>
+
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id);
+const money=n=>'₪'+Math.round(n).toLocaleString('en-US');
+const jBonus=r=>r<45000?0:(Math.floor((r-45000)/5000)+1)*250;
+function rate(score,improved,half){const d=Math.round(score*10),std=Math.max(0,d-80)*100;return std||((half&&improved)?250:0);}
+const SC={
+  m1:{d:'הכנסה של ₪57,000 בג\'אנגל, חוזה חדש אחד, אירוע קטן, ושיפור ראשון בדירוג של שני הנכסים.',half:1,rev:57000,leases:1,rent:5500,ev:3000,svc:500,z:3.7,zi:1,j:5.7,ji:1},
+  m6:{d:'הכנסה של ₪65,000 בג\'אנגל, שני חוזים חדשים, אירועים קבועים, והדירוגים ממשיכים לעלות.',half:1,rev:65000,leases:2,rent:5500,ev:6000,svc:2000,z:6.0,zi:1,j:7.5,ji:1},
+  y1:{d:'הכנסה של ₪73,000 בג\'אנגל, שני הנכסים מעל 8.0 בבוקינג, ופעילות אירועים מבוססת.',half:0,rev:73000,leases:2,rent:5500,ev:10000,svc:4000,z:8.2,zi:0,j:8.5,ji:0}
+};
+let st={...SC.m1},mode='m1';
+function compute(s){
+  const rev=s.rev;
+  const parts=[
+    ['שכר בסיס',5000,'--c-base'],
+    ['בונוס הכנסות ג\'אנגל',jBonus(rev),'--c-rev'],
+    ['עמלת חוזים בזוזו',s.leases*s.rent*.1,'--c-lease'],
+    ['בונוס דירוג / שיפור',rate(s.z,s.zi,s.half)+rate(s.j,s.ji,s.half),'--c-rate'],
+    ['עמלת אירועים',(s.ev+s.svc)*.07,'--c-ev'],
+    ['שווי הסטודיו',5600,'--c-home']
+  ];
+  const cash=parts.slice(0,5).reduce((a,p)=>a+p[1],0);
+  return {rev,parts,cash,pkg:cash+5600};
+}
+function render(){
+  const r=compute(st);
+  $('cash').textContent=money(r.cash);$('pkg').textContent=money(r.pkg);
+  $('scDesc').textContent=mode==='custom'?'הזיזו את הנתונים וראו איך כל רכיב משפיע על הסכום.':SC[mode].d;
+  $('stack').innerHTML=r.parts.map(p=>p[1]>0?`<div style="width:${p[1]/r.pkg*100}%;background:var(${p[2]})"></div>`:'').join('');
+  $('legend').innerHTML=r.parts.map(p=>`<div class="lrow"><span><i style="background:var(${p[2]})"></i>${p[0]}</span><b class="num">${money(p[1])}</b></div>`).join('');
+  $('rev').value=st.rev;$('revV').textContent=money(st.rev);$('revH').textContent='ללא מע״מ · בונוס הכנסות: '+money(jBonus(st.rev));
+  $('leases').value=st.leases;$('leasesV').textContent=st.leases;
+  $('rent').value=st.rent;$('rentV').textContent=money(st.rent);
+  $('ev').value=st.ev;$('evV').textContent=money(st.ev);
+  $('svc').value=st.svc;$('svcV').textContent=money(st.svc);
+  for(const k of ['z','j']){
+    $(k).value=st[k];$(k+'V').textContent=Number(st[k]).toFixed(1);
+    const off=!st.half||Math.round(st[k]*10)>80;
+    $(k+'i').checked=!!st[k+'i'];$(k+'i').disabled=off;$(k+'iL').classList.toggle('off',off);
+  }
+  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.half===st.half)));
+}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+  mode=b.dataset.sc;
+  document.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-pressed',String(t===b)));
+  $('custom').hidden=mode!=='custom';
+  if(mode!=='custom') st={...SC[mode]};
+  render();
+}));
+['rev','leases','rent','ev','svc','z','j'].forEach(id=>$(id).addEventListener('input',e=>{st[id]=Number(e.target.value);render();}));
+['zi','ji'].forEach(id=>$(id).addEventListener('change',e=>{st[id]=e.target.checked?1:0;render();}));
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{st.half=+b.dataset.half;render();}));
+$('heroTarget').textContent=money(compute(SC.y1).pkg);
+$('revTable').innerHTML=[45000,50000,55000,60000,65000,70000,75000,80000].map(r=>`<tr><td class="num">${money(r)}</td><td class="bonus num">${money(jBonus(r))}</td></tr>`).join('');
+render();
+})();
+</script>
+
+</body></html>
